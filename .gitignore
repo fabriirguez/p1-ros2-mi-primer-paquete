@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Salidas de colcon (si se compila dentro del repositorio por error)
+build/
+install/
+log/
+
+# Copias de seguridad de editores
+*.bak
+*~
+*.swp
+
+# macOS
+.DS_Store
+._*

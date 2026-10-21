@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>mi_primer_paquete</name>
+  <version>0.0.0</version>
+  <description>
+    P1 de Arquitecturas Software para Robótica (UCJC): sistema de dos nodos
+    ROS 2. mi_nodo publica /saludo y contador_nodo cuenta los mensajes y
+    publica el total en /contador, con servicio de reinicio, parámetro
+    umbral y QoS RELIABLE + TRANSIENT_LOCAL.
+  </description>
+  <maintainer email="160241549+fabriirguez@users.noreply.github.com">Fabricio Andree Rodriguez</maintainer>
+  <license>MIT</license>
+
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>rcl_interfaces</depend>
+  <depend>std_srvs</depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
